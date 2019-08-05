@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B958000922F7D26E0064159C /* VVFramePopupCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = B958000322F7D26E0064159C /* VVFramePopupCategory.m */; };
+		B958000A22F7D26E0064159C /* VVFramePopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B958000522F7D26E0064159C /* VVFramePopupView.m */; };
+		B958000B22F7D26E0064159C /* VVFrameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B958000722F7D26E0064159C /* VVFrameWindow.m */; };
 		B958FFD222F7D24E0064159C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B958FFD122F7D24E0064159C /* AppDelegate.m */; };
 		B958FFD522F7D24E0064159C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B958FFD422F7D24E0064159C /* ViewController.m */; };
 		B958FFD822F7D24E0064159C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B958FFD622F7D24E0064159C /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		B958FFE022F7D24F0064159C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B958FFDF22F7D24F0064159C /* main.m */; };
 		B958FFEA22F7D24F0064159C /* VVFramePopupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B958FFE922F7D24F0064159C /* VVFramePopupTests.m */; };
 		B958FFF522F7D24F0064159C /* VVFramePopupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B958FFF422F7D24F0064159C /* VVFramePopupUITests.m */; };
+		C3AE632C8804D8BC85AC7532 /* BottomPopuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AE63A179F1FB1D116BDA07 /* BottomPopuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B958000322F7D26E0064159C /* VVFramePopupCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVFramePopupCategory.m; sourceTree = "<group>"; };
+		B958000422F7D26E0064159C /* VVFrameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVFrameWindow.h; sourceTree = "<group>"; };
+		B958000522F7D26E0064159C /* VVFramePopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVFramePopupView.m; sourceTree = "<group>"; };
+		B958000622F7D26E0064159C /* VVFramePopupCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVFramePopupCategory.h; sourceTree = "<group>"; };
+		B958000722F7D26E0064159C /* VVFrameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVFrameWindow.m; sourceTree = "<group>"; };
+		B958000822F7D26E0064159C /* VVFramePopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVFramePopupView.h; sourceTree = "<group>"; };
 		B958FFCD22F7D24E0064159C /* VVFramePopup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVFramePopup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B958FFD022F7D24E0064159C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B958FFD122F7D24E0064159C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		B958FFF022F7D24F0064159C /* VVFramePopupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVFramePopupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B958FFF422F7D24F0064159C /* VVFramePopupUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVFramePopupUITests.m; sourceTree = "<group>"; };
 		B958FFF622F7D24F0064159C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AE63A179F1FB1D116BDA07 /* BottomPopuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomPopuView.m; sourceTree = "<group>"; };
+		C3AE6AACB73021FD38AD631E /* BottomPopuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomPopuView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B958000222F7D26E0064159C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B958000622F7D26E0064159C /* VVFramePopupCategory.h */,
+				B958000322F7D26E0064159C /* VVFramePopupCategory.m */,
+				B958000422F7D26E0064159C /* VVFrameWindow.h */,
+				B958000722F7D26E0064159C /* VVFrameWindow.m */,
+				B958000822F7D26E0064159C /* VVFramePopupView.h */,
+				B958000522F7D26E0064159C /* VVFramePopupView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		B958FFC422F7D24E0064159C = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +126,7 @@
 		B958FFCF22F7D24E0064159C /* VVFramePopup */ = {
 			isa = PBXGroup;
 			children = (
+				B958000222F7D26E0064159C /* Source */,
 				B958FFD022F7D24E0064159C /* AppDelegate.h */,
 				B958FFD122F7D24E0064159C /* AppDelegate.m */,
 				B958FFD322F7D24E0064159C /* ViewController.h */,
@@ -110,6 +136,8 @@
 				B958FFDB22F7D24F0064159C /* LaunchScreen.storyboard */,
 				B958FFDE22F7D24F0064159C /* Info.plist */,
 				B958FFDF22F7D24F0064159C /* main.m */,
+				C3AE63A179F1FB1D116BDA07 /* BottomPopuView.m */,
+				C3AE6AACB73021FD38AD631E /* BottomPopuView.h */,
 			);
 			path = VVFramePopup;
 			sourceTree = "<group>";
@@ -263,8 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B958FFD522F7D24E0064159C /* ViewController.m in Sources */,
+				B958000B22F7D26E0064159C /* VVFrameWindow.m in Sources */,
 				B958FFE022F7D24F0064159C /* main.m in Sources */,
+				B958000A22F7D26E0064159C /* VVFramePopupView.m in Sources */,
+				B958000922F7D26E0064159C /* VVFramePopupCategory.m in Sources */,
 				B958FFD222F7D24E0064159C /* AppDelegate.m in Sources */,
+				C3AE632C8804D8BC85AC7532 /* BottomPopuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
