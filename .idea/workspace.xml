@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9c007e2-0b1b-426c-ba62-7dcc365d1c8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/BottomPopuView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/BottomPopuView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/Source/VVFramePopupCategory.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/Source/VVFramePopupCategory.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/Source/VVFramePopupView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/Source/VVFramePopupView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/Source/VVFrameWindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VVFramePopup/Source/VVFrameWindow.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VVFramePopup.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/VVFramePopup.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VVFramePopup.xcodeproj/xcuserdata/jiangmingz.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/VVFramePopup.xcodeproj/xcuserdata/jiangmingz.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VVFramePopup/ViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/VVFramePopup/ViewController.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VVFramePopup/BottomPopuView.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="119">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -133,12 +122,6 @@
               <item name="VVFramePopup" type="1d218c8b:XcodeProjectNode" />
               <item name="VVFramePopup" type="fcab9f18:XcodeViewNode" />
             </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="VVFramePopup" type="1d218c8b:XcodeProjectNode" />
-              <item name="VVFramePopup" type="fcab9f18:XcodeViewNode" />
-              <item name="Source" type="fcab9f18:XcodeViewNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -185,16 +168,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564974033937</updated>
-      <workItem from="1564974036803" duration="648000" />
+      <workItem from="1564974036803" duration="1157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="648000" />
+    <option name="totallyTimeSpent" value="1157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
@@ -283,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/VVFramePopup/BottomPopuView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
