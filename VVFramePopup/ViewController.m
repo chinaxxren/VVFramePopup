@@ -32,4 +32,8 @@
     [bottomPopuView show];
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 @end

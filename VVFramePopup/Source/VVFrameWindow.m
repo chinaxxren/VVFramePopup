@@ -7,6 +7,7 @@
 
 #import "VVFramePopupView.h"
 #import "VVFramePopupCategory.h"
+#import "VVRotateController.h"
 
 @interface VVFrameWindow () <UIGestureRecognizerDelegate>
 
@@ -34,7 +35,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         window = [[VVFrameWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-        window.rootViewController = [UIViewController new];
+        window.rootViewController = [VVRotateController new];
     });
 
     return window;
