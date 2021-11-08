@@ -10,6 +10,7 @@
 
 #import "VVFramePopupView.h"
 #import "BottomPopuView.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -28,8 +29,9 @@
 }
 
 - (void)clickRed {
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     BottomPopuView *bottomPopuView = [BottomPopuView new];
-    [bottomPopuView show];
+    [bottomPopuView showWithView:delegate.window.rootViewController.view];
 }
 
 - (BOOL)shouldAutorotate {

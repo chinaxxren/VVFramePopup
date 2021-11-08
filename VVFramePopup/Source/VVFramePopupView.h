@@ -13,6 +13,8 @@
 
 - (void)show;
 
+- (void)showWithView:(UIView *)view;
+
 - (void)hide;
 
 @end

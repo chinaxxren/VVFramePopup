@@ -12,7 +12,7 @@
 #define VVStrongify(o) __strong typeof(self) o = vvwo;
 
 
-@interface VVFramePopupView ()
+@interface VVFramePopupView () <UIGestureRecognizerDelegate>
 
 @property(nonatomic, assign) BOOL hasHideKeboard;
 @property(nonatomic, assign) BOOL first;
@@ -76,6 +76,18 @@
     }
     [self.attachedView showBackground];
 
+    [self showAnimation];
+}
+
+- (void)showWithView:(UIView *)view {
+    self.attachedView = view;
+    [self.attachedView showBackground];
+    
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTap:)];
+    gesture.cancelsTouchesInView = NO;
+    gesture.delegate = self;
+    [self.attachedView.backgroundPopuView addGestureRecognizer:gesture];
+     
     [self showAnimation];
 }
 
@@ -197,6 +209,17 @@
                              }
                          }
                      }];
+}
+
+
+- (void)actionTap:(UITapGestureRecognizer *)gesture {
+    if (!self.attachedView.backgroundAnimating) {
+        [self hide];
+    }
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    return (touch.view == self.attachedView.backgroundPopuView);
 }
 
 @end
