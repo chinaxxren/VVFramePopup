@@ -10,6 +10,8 @@
 @property(nonatomic, strong) UIView *attachedView;
 @property(nonatomic, weak) UIView *fieldResponder;
 @property(nonatomic, assign) BOOL bottom;
+@property(nonatomic, assign) BOOL openField;
+@property(nonatomic, assign) BOOL becomeResponder;
 
 - (void)show;
 

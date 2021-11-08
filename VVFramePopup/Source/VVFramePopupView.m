@@ -49,6 +49,8 @@
     self.backgroundColor = [UIColor whiteColor];
     self.attachedView = [VVFrameWindow sharedWindow].attachView;
     self.bottom = YES;
+    self.openField = NO;
+    self.becomeResponder = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWillShow:)
@@ -120,7 +122,7 @@
                      }
                      completion:^(BOOL finished) {
                          VVStrongify(self);
-                         if (finished && self.fieldResponder) {
+                         if (self.becomeResponder && finished && self.fieldResponder) {
                              [self.fieldResponder becomeFirstResponder];
                          }
                      }];
@@ -161,13 +163,22 @@
 
         CGFloat oldY = self.frame.origin.y + self.frame.size.height;
         CGFloat newY = [UIScreen mainScreen].bounds.size.height - self.keybordHeight;
-        if (self.bottom) {
-            self.afterY = newY - self.frame.size.height;
+        if (self.openField && self.fieldResponder) {
+            CGFloat fieldY = self.beforeY + CGRectGetMaxY(self.fieldResponder.frame);
+            if (fieldY > newY) {
+                self.afterY = self.beforeY - (fieldY - newY);
+            } else {
+                self.afterY = self.beforeY;
+            }
         } else {
-            if (oldY > newY) {
+            if (self.bottom) {
                 self.afterY = newY - self.frame.size.height;
             } else {
-                self.afterY = self.frame.origin.y;
+                if (oldY > newY) {
+                    self.afterY = newY - self.frame.size.height;
+                } else {
+                    self.afterY = self.frame.origin.y;
+                }
             }
         }
     }
